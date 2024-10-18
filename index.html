@@ -14,7 +14,7 @@
 <body>
     <!-- Navbar Desktop Start -->
 
-    <nav class="w-full bg-gray-600 py-2 px-3 flex ">
+    <nav class="w-full hidden lg:flex bg-gray-600 py-2 px-3 ">
         <div class="w-1/12 bg-red-400 flex">Logo</div>
         <div class="w-6/12 flex mx-auto">
             <input type="text" class="w-full h-9 px-2 rounded-s-md" placeholder="Search ...">
@@ -29,13 +29,21 @@
             <button class="w-6/12 flex justify-center items-center ">
                 <i class="fa-solid fa-gear text-xl"></i>
             </button>
-
-
-
         </div>
     </nav>
     <!-- Navbar Desktop End -->
+    <!-- Navbar Phon Start -->
+    <nav class="flex lg:hidden w-full bg-gray-600 p-1">
+        <input type="text" class="w-11/12 mx-auto h-7 my-1 rounded-md px-2" placeholder="Search ...">
+    </nav>
+    <nav class="flex lg:hidden w-full bottom-0 fixed bg-slate-400  justify-evenly items-center py-3">
+        <i class="fa-solid fa-house text-xl"></i>
+        <i class="fa-solid fa-bars text-xl"></i>
+        <i class="fa-regular fa-bookmark text-xl"></i>
+        <i class="fa-regular fa-user text-xl"></i>
 
+    </nav>
+    <!-- Navbar Phon End -->
 
 
 
