@@ -16,21 +16,30 @@
 
     <nav class="bg-[#1E2A5E] hidden py-2 md:flex">
         <div class="w-2/12 mx-1"><img src="#" alt="Logo"></div>
-        <div class="flex mx-auto w-6/12 rounded-md bg-[#E1D7B7]"><input type="text" name="Searchbox" id="Searchbox"
-                class="w-11/12 h-10 rounded-s-md bg-transparent">
+        <div id="searchBox" class="flex mx-auto w-6/12 rounded-md bg-[#E1D7B7]"><input type="text" name="SearchInput"
+                id="SearchInput" class="w-11/12 h-10 rounded-s-md bg-transparent">
             <button class="flex items-center justify-center w-1/12 rounded-e-md">
-                <i class="fa-solid fa-magnifying-glass  "></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
         <div class="w-20 flex items-center bg-[#E1D7B7] me-5  rounded-md">
             <button class="hover:bg-white w-6/12 h-full px-1 rounded-s-md"><i
                     class="fa-solid fa-gear text-xl"></i></button>
-            <button class="hover:bg-white w-6/12 h-full px-1 rounded-e-md"><i
+            <button class="hover:bg-white w-6/12 h-full px-1 rounded-e-md" id="HeaderUserBtn"><i
                     class="fa-regular fa-user text-xl"></i></button>
         </div>
     </nav>
 
-    <!-- Login Screen Desktop End -->
+    <!-- Navbar Desktop End -->
+
+    <!-- Login Window Start -->
+    <div id="LoginScreen" class="w-4/12 bg-red-500 z-50 mx-auto ">
+        <div>
+            <label for="PhoneNumInp">Enter Your Phone Number</label>
+            <input type="text" name="PhoneNumInp" id="PhoneNumInp">
+        </div>
+    </div>
+    <!-- Login Window End -->
 
 
 
@@ -82,6 +91,8 @@
 
     <!-- Scripts -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="script/HeaderEffects.js"></script>
+
 </body>
 
 </html>
