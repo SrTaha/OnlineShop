@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -32,15 +34,6 @@
 
     <!-- Navbar Desktop End -->
 
-    <!-- Login Window Start -->
-    <div id="LoginScreen" class="w-4/12 bg-red-500 z-50 mx-auto ">
-        <div>
-            <label for="PhoneNumInp">Enter Your Phone Number</label>
-            <input type="text" name="PhoneNumInp" id="PhoneNumInp">
-        </div>
-    </div>
-    <!-- Login Window End -->
-
 
 
     <div id="root" class="w-full flex justify-evenly my-10">
@@ -59,7 +52,12 @@
             </ul>
         </div>
         <!-- desktop Menu Bar End -->
-        <div id="content" class="w-9/12 bg-red-400">s</div>
+
+
+
+        <div id="content" class="w-9/12 bg-red-400 rounded-md flex flex-col">
+
+        </div>
     </div>
 
 
@@ -92,7 +90,7 @@
     <!-- Scripts -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="script/HeaderEffects.js"></script>
-
+    <script src="script/SwiperConfig.js"></script>
 </body>
 
 </html>
