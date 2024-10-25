@@ -36,26 +36,35 @@
 
 
 
-    <div id="root" class="w-full flex justify-evenly my-10">
+    <div id="root" class="w-full flex justify-around my-10">
 
 
 
         <!-- desktop Menu Bar Start -->
-        <div class="w-1/12 bg-[#1E2A5E] flex flex-col py-2 rounded-md sticky">
-            <p class="mx-auto text-2xl text-[#E1D7B7]">MenuBar</p>
-            <ul class="flex flex-col items-center text-[#E1D7B7]">
-                <li class="my-4 text-xl ">Home</li>
-                <li class="my-4 text-xl ">Brands</li>
-                <li class="my-4 text-xl ">Category</li>
-                <li class="my-4 text-xl ">Price</li>
-                <li class="my-4 text-xl ">About Us</li>
-            </ul>
+        <div class=" bg-[#1E2A5E] flex py-2 rounded-md sticky z-0">
+            <div class="flex flex-col px-5">
+                <p class="mx-auto text-2xl text-[#E1D7B7]">MenuBar</p>
+                <ul class="flex flex-col items-center text-[#E1D7B7]">
+                    <li class="my-4 text-xl w-full flex justify-center cursor-pointer">Home</li>
+                    <li class="my-4 text-xl w-full flex justify-center cursor-pointer" id="BrandsMenuItem">Brands</li>
+                    <li class="my-4 text-xl w-full flex justify-center cursor-pointer" id="Category-menu-item">Category
+                    </li>
+                    <li class="my-4 text-xl w-full flex justify-center cursor-pointer" id="Price-menu-item">Price</li>
+                    <li class="my-4 text-xl w-full flex justify-center cursor-pointer">About Us</li>
+                </ul>
+            </div>
+
+            <div class="w-full hidden" id="SubMenu">
+                <ul class="flex w-full flex-col items-center px-1"></ul>
+
+            </div>
         </div>
         <!-- desktop Menu Bar End -->
 
 
 
-        <div id="content" class="w-9/12 bg-red-400 rounded-md flex flex-col">
+
+        <div id="content" class="w-9/12 bg-red-400 rounded-md flex flex-col z-0">
 
         </div>
     </div>
@@ -91,6 +100,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="script/HeaderEffects.js"></script>
     <script src="script/SwiperConfig.js"></script>
+    <script src="script/MenuBar.js"></script>
 </body>
 
 </html>
